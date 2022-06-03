@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align items</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            flex: 1;
+        }
+
+        .flex{
+            flex: 1;
+        }
+
+        .center{
+            align-items: center;
+        }
+
+        .stretch{
+            align-items: stretch;
+        }
+
+        .start{
+            align-items: flex-start;
+        }
+
+        .end{
+            align-items: flex-end;
+        }
+
+        .baseline{
+            align-items: baseline;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .central{
+            height: 300px;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+    <p>center</p>
+    <section class="container center">
+        <div class="item">item 1</div>
+        <div class="item">lorem ips dolor sit amet</div>
+        <div class="item">item 3 algum texto</div>
+    </section>
+
+    <!-- todos elementos crescem de forma igual -->
+    <p>stretch</p> 
+    <section class="container stretch">
+        <div class="item">item 1</div>
+        <div class="item">lorem ips dolor sit amet. lorem ips dolor sit amet.</div>
+        <div class="item">item 3 algum texto</div>
+    </section>
+    <!-- todos elementos ao topo -->
+    <p>flex-start</p> 
+    <section class="container start">
+        <div class="item">item 1</div>
+        <div class="item">lorem ips dolor sit amet. lorem ips dolor sit amet.</div>
+        <div class="item">item 3 algum texto</div>
+    </section>
+    <!-- todos elementos ao fundo -->
+    <p>flex-end</p> 
+    <section class="container end">
+        <div class="item">item 1</div>
+        <div class="item">lorem ips dolor sit amet. lorem ips dolor sit amet.</div>
+        <div class="item">item 3 algum texto</div>
+    </section>
+    <!-- todos elementos alinhados na linha de base do eixo cruzado -->
+    <p>baseline</p> 
+    <section class="container baseline">
+        <div class="item"><br>item 1sdasd</div>
+        <div class="item">lorem ips dolor sit amet. </div>
+        <div class="item">item 3 mais algum monte de vasco e gigante texto</div>
+    </section>
+
+    <h1>column</h1>
+    <p>flex-start</p> 
+    <section class="container start column">
+        <div class="item">item 1</div>
+        <div class="item">lorem ips dolor sit amet.</div>
+        <div class="item">item 3 mais algum texto. Lipsum.</div>
+    </section>
+    <!-- todos elementos ao fundo -->
+    <p>flex-end</p> 
+    <section class="container end column">
+        <div class="item">item 1</div>
+        <div class="item">lorem ips dolor sit amet.</div>
+        <div class="item">item 3 maisalgum texto. Lipsum.</div>
+    </section>
+
+    <p>center</p>
+    <section class="container center column">
+        <div class="item">item 1</div>
+        <div class="item">lorem ips dolor sit amet</div>
+        <div class="item">item 3 algum texto</div>
+    </section>
+
+    <p>baseline</p> 
+    <section class="container baseline column">
+        <div class="item"><br>item 1</div>
+        <div class="item">lorem ips dolor sit amet. <br> s</div>
+        <div class="item">item 3 mais algum monte de vasco e gigante texto</div>
+    </section>
+
+    <section class="container central center">
+        <div class="item">lorem ips dolor sit amet.
+            lorem ips dolor sit amet.
+            lorem ips dolor sit amet.
+            lorem ips dolor sit amet.
+            lorem ips dolor sit amet.
+            lorem ips dolor sit amet.</div>
+    </section>
+
+</body>
+</html>
