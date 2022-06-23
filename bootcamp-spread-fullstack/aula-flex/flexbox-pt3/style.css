@@ -109,7 +109,7 @@ header .menu {
 }
 
 #quem-somos img{
-    min-width: 3px;
+    min-width: 420px;
 }
 
 .container-externo {
@@ -172,11 +172,17 @@ header .menu {
 #planos{
     flex-direction: column;
     min-height: 100vh;
+    padding-top: 50px;
+}
+
+#planos h2{
+    font-size: 32px;
 }
 
 .list-planos {
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
 }
 
 .item-plano {
@@ -184,6 +190,7 @@ header .menu {
     border: 5px solid #122A57;
     margin-right: 20px;
     padding: 10px;
+    max-width: 240px;
 }
 
 .item-plano .btn {
@@ -196,6 +203,7 @@ header .menu {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 20px;
 }
 
 .item-plano h3::after {
@@ -211,5 +219,19 @@ header .menu {
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
+}
 
+.item-plano ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.item-plano ul li::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #122A57;
+    margin: 5px;
 }
