@@ -107,3 +107,64 @@ header .menu {
     margin-bottom: 10px;
     width: 90%;
 }
+
+#quem-somos img{
+    min-width: 3px;
+}
+
+.container-externo {
+    background-color: #122A57;
+    width: 100%;
+}
+
+#servicos {
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#servicos h2 {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.list-servicos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-servicos .item-servicos {
+    text-align: center;
+}
+
+.item-servicos a {
+    width: 220px;
+    background-color: #fff;
+    border-radius: 50px;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 50px;
+    padding: 5px 10px;
+    color: #122A57;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.item-servicos p {
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.item-servicos img {
+    width: 80%;
+    margin: auto;
+}
+
+.roteiros img {
+    width: 76%;
+}
